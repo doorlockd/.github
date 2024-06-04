@@ -4,6 +4,8 @@ It was built for use in [De WAR](https://www.dewar.nl), a community
 building in the Netherlands, but can probably be useful in other places
 as well.
 
+
+
 It is designed to control an electronic lock (we are using it to control
 an electric strike, but it should be possible to use any 12V or
 24V-controlled lock, including electric deadbolts or magnetic locks).
@@ -66,3 +68,26 @@ repository](https://github.com/PlanBCode/doorlockd-ansible-config).
 
 There is also a 3D-printed case for the card reader, but the design
 files for that are not yet public.
+
+### Example deployment
+To get a better overview of what is included, our main entrace deployment is shown below.
+
+On the outside, there is a card reader next to the door:
+![Card reader on door](https://github.com/doorlockd/.github/assets/194491/218221fb-ecee-4535-a2cc-60ebb9f1cd57)
+
+On the inside, there is a control board above the door (just bare PCB for now), and a big button to unlock the door:
+
+![Door overview](https://github.com/doorlockd/.github/assets/194491/09cbde6a-a260-4dfc-8ede-d976ae17f60e)
+![Control board](https://github.com/doorlockd/.github/assets/194491/db00c397-54ba-42a7-a7d9-d495e168d11c)
+
+This particular door uses an electric strike ("sluitkom" in Dutch) on the deadbolt ("nachtschoot") instead of the latch ("dagschoot"), so the door is more firmly locked and can have a door handle (instead of a knob) on the outside (though the door also has an electric strike for the latch, but we do not use that currently). Here is the electric strike (English terminology might be wrong, though):
+
+![Electric lock](https://github.com/doorlockd/.github/assets/194491/f91da646-d37c-4d6d-a182-a1069856c648)
+
+The inside of the cardreader looks like this:
+
+![Card reader right side](https://github.com/doorlockd/.github/assets/194491/c7c6916a-b95a-4820-a532-029078ff619e)
+![Card reader left side](https://github.com/doorlockd/.github/assets/194491/eda94f71-e920-42ce-8465-c874aa935430)
+![Card reader top](https://github.com/doorlockd/.github/assets/194491/359c1e7b-0808-41de-8270-e5aa8f5a7691)
+
+The configuration and installation of this system is managed via an ansible playbook, which can be found at https://github.com/PlanBCode/doorlockd-ansible-config
