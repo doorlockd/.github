@@ -69,6 +69,11 @@ repository](https://github.com/PlanBCode/doorlockd-ansible-config).
 There is also a 3D-printed case for the card reader, but the design
 files for that are not yet public.
 
+### Discussion and questions
+The project has a public matrix channel: https://matrix.to/#/#doorlockd:matrix.org
+
+Feel free to drop by there if you are interested in the project, have questions or want to discuss something else.
+
 ### Example deployment
 To get a better overview of what is included, our main entrace deployment is shown below.
 
